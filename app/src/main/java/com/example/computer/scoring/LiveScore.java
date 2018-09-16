@@ -132,6 +132,10 @@ public class LiveScore extends AppCompatActivity {
 
     }
 
+    /**
+     * event of adding or substracting a selected score.
+     * @param view- the add or sub buttons
+     */
     public void addOrSubTeams(View view) {
         int points = Integer.parseInt(liveScore.getSelectedItem().toString());
         switch (view.getId()) {

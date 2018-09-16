@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * building the timer on the screen.
+     */
     private void setTimeSpinners() {
         this.hours = new ArrayList<String>();
         this.minutes = new ArrayList<String>();
