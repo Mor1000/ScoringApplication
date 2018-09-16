@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+/***
+ * Summary: This activity shows the final results.
+ */
 public class Results extends AppCompatActivity {
     TextView resultText;
 
