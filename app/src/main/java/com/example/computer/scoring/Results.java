@@ -1,0 +1,23 @@
+package com.example.computer.scoring;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+public class Results extends AppCompatActivity {
+TextView resultText;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_results);
+        resultText=(TextView)findViewById(R.id.winner_text);
+        Bundle resultsOfGame= getIntent().getExtras();
+        resultText.setText(resultsOfGame.getString("resultOfGame"));
+    }
+public void check(){}
+    public void goBackToMenu(View view) {
+        startActivity(new Intent(this,MainActivity.class));
+    }
+}

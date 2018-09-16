@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".LiveScore">
+
+    <TextView
+        android:id="@+id/timer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/timer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="startOrStopTimer"
+        android:text="start" />
+
+    <Spinner
+        android:id="@+id/live_scores_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:dropDownWidth="60dp"></Spinner>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/teamA_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/live_scores_spinner"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/divider"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/teamB_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/live_scores_spinner"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/divider"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/teamA_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teamA_text"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@id/divider"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/teamB_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teamB_text"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/divider"
+        android:textSize="26sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <Button
+            android:id="@+id/sub_points_button_teamA"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="addOrSubTeams"
+            android:text="-"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/add_points_button_teamA"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="addOrSubTeams"
+            android:text="+"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/sub_points_button_teamB"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="addOrSubTeams"
+            android:text="-"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/add_points_button_teamB"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="addOrSubTeams"
+            android:text="+"
+            android:textSize="35sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Scoring</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="set">Set</string>
+    <string name="set_timer">Set Timer</string>
+    <string name="add_score">Add Score</string>
+    <string-array name="hours_array"></string-array>
+</resources>
