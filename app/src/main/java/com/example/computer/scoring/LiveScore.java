@@ -157,4 +157,5 @@ public class LiveScore extends AppCompatActivity {
     private void test3(){
 
     }
+    public void something(){}
 }
