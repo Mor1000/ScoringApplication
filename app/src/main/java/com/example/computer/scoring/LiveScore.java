@@ -151,4 +151,7 @@ public class LiveScore extends AppCompatActivity {
         this.teamAscore.setText(String.valueOf(this.pointsSumA));
         this.teamBscore.setText(String.valueOf(this.pointsSumB));
     }
+    private void test(){
+
+    }
 }
