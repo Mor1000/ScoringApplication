@@ -10,14 +10,17 @@ import android.widget.TextView;
  * Summary: This activity shows the final results.
  */
 public class Results extends AppCompatActivity {
-    TextView resultText;
-
+TextView resultText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-        resultText = (TextView) findViewById(R.id.winner_text);
-        Bundle resultsOfGame = getIntent().getExtras();
+        resultText=(TextView)findViewById(R.id.winner_text);
+        Bundle resultsOfGame= getIntent().getExtras();
         resultText.setText(resultsOfGame.getString("resultOfGame"));
+    }
+public void check(){}
+    public void goBackToMenu(View view) {
+        startActivity(new Intent(this,MainActivity.class));
     }
 }
