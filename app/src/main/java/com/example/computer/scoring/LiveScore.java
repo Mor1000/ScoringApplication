@@ -52,7 +52,7 @@ public class LiveScore extends AppCompatActivity {
         this.teamAscore = (TextView) findViewById(R.id.teamA_score);
         this.teamBscore = (TextView) findViewById(R.id.teamB_score);
     }
-
+//hh
     private void setScoresListAndTeams() {
         this.scores = timeExtras.getStringArrayList("scores");
         this.adapterScores = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, this.scores);
