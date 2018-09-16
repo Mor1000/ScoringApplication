@@ -16,6 +16,7 @@ TextView resultText;
         Bundle resultsOfGame= getIntent().getExtras();
         resultText.setText(resultsOfGame.getString("resultOfGame"));
     }
+    //fdfdfd
 public void check(){}
     public void goBackToMenu(View view) {
         startActivity(new Intent(this,MainActivity.class));
