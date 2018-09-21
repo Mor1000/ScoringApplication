@@ -31,7 +31,7 @@ public class LiveScore extends AppCompatActivity {
     Bundle timeExtras;
     int pointsSumA = 0;
     int pointsSumB = 0;
-
+//fork checking
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
