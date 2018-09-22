@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     EditText teamA;
     EditText teamB;
     ArrayAdapter<String> adapter_scores;
-//ddd
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
