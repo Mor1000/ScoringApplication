@@ -18,7 +18,7 @@ import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "Checking"; //tag for logging.
+    private static final String TAG = "checking"; //tag for logging.
     Spinner spinnerHours;
     Spinner spinnerMinutes;
     Spinner spinnerSeconds;
