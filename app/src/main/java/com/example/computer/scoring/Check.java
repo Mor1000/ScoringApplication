@@ -1,5 +1,6 @@
 package com.example.computer.scoring;
 //dd
 public class Check {
+  public void A(){}
     public void B(){}
 }
