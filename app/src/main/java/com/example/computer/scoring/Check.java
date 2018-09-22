@@ -2,7 +2,7 @@ package com.example.computer.scoring;
 
 public class Check {
     public void  A(){
-        int a=4;
-        int b=3;
+        int a=42;
+        int b=34;
     }
 }
